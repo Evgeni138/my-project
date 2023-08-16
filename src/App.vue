@@ -1,8 +1,9 @@
 <template>
   <Heading></Heading>
-  <Homepage></Homepage>
+  <!-- <Homepage></Homepage> -->
   <!-- <Blog></Blog> -->
   <!-- <BlogDetails></BlogDetails> -->
+  <Project/>
   <Footing></Footing>
 </template>
 
@@ -12,11 +13,12 @@ import Footing from '@/components/Footing.vue';
 import Homepage from '@/components/Homepage.vue';
 import Blog from '@/components/Blog.vue';
 import BlogDetails from '@/components/BlogDetails.vue';
+import Project from './components/Project.vue';
 
 export default {
   name: 'App',
   components: {
-    Heading, Footing, Homepage, Blog, BlogDetails
+    Heading, Footing, Homepage, Blog, BlogDetails, Project
   }
 }
 </script>
