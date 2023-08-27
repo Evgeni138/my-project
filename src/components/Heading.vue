@@ -1,30 +1,34 @@
 <template>
     <section class="header center">
-        <div class="header__logo">
-        <img class="header__img" src="@/assets/images/img_heading/Logo.png" alt="Logo" />
-        <h3 class="header__interno">Interno</h3>
-        </div>
-        <div class="header__menu">
-        <a href="" class="header__link">Home</a>
-        <a href="" class="header__link">Project</a>
-        <a href="" class="header__link">Blog</a>
+        <router-link to="/" class="header__link">
+            <div class="header__logo">
+                <img class="header__img" src="@/assets/images/img_heading/Logo.png" alt="Logo" />
+                <h3 class="header__interno">Interno</h3>
+            </div>
+        </router-link>
+        <div>
+            <nav class="header__menu">
+                <router-link to="/" class="header__link">Home</router-link>
+                <router-link to="/project" class="header__link">Project</router-link>
+                <router-link to="/blog" class="header__link">Blog</router-link>
+            </nav>
         </div>
     </section>
 </template>
 
 <script>
-    export default {
-        name: 'Heading',
+export default {
+    name: 'Heading',
 
-        data() {
+    data() {
         return {
-            
+
         }
     },
-    };
+};
 </script>
 
 <style scoped lang="scss">
-    @import '@/assets/styles/heading.scss';
-    @import "@/assets/fonts/fonts.css";
+@import '@/assets/styles/heading.scss';
+@import "@/assets/fonts/fonts.css";
 </style>
